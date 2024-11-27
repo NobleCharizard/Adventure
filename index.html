@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <title>Em busca da cidade perdida</title>
+</head>
+<body>
+    <main>
+        <div class="passo ativo" id="passo-0">
+            <img src="img/cenario-passo0.png" alt="">
+            <p>Em um dia, você está normalmente andando pela sua escola no intervalo, para qual local você vai?</p>
+            <button class="btn-proximo" data-proximo="1">Refeitório</button>
+            <button class="btn-proximo" data-proximo="2">Biblioteca</button>
+        </div>
+        <div class="passo" id="passo-1">
+            <p>Você foi ao refeitório e se alimentou como em todos os outros dias, nada mudou.</p>
+        </div>
+        <div class="passo" id="passo-2">
+            <p>Na biblioteca, você percebeu que havia algo diferente. Havia um buraco no chão onde sempre haviam caixas, você pensa em entrar, mas fica bastante indeciso. O que você fará?</p>
+            <button class="btn-proximo" data-proximo="5">Entrar na sala secreta</button>
+            <button class="btn-proximo" data-proximo="6">Ir embora</button>
+        </div>
+        <div class="passo" id="passo-3">
+            <p>No topo do Pico da Tijuca, você encontra uma antiga inscrição apontando que a próxima pista está
+                localizada no Amazonas.</p>
+            <button class="btn-proximo" data-proximo="7">Seguir para o Amazonas</button>
+        </div>
+
+        <div class="passo" id="passo-4">
+            <img src="img/cenario-passo4-voltar-casa.png" alt="imagem voltando para casa e desitindo da aventura">
+            <p>Você decide que a aventura é grande demais e volta para casa, mas sempre se pergunta o que teria
+                encontrado.</p>
+        </div>
+
+        <div class="passo" id="passo-5">
+            <p>Na sala, você ve um computador. Você pensa se deve ligá-lo, com medo do que verá. O que você fará?</p>
+            <button class="btn-proximo" data-proximo="13">Ligar o computador</button>
+            <button class="btn-proximo" data-proximo="14">Não ligar o computador</button>
+        </div>
+
+        <div class="passo" id="passo-13">
+            <p>No computador, você ve um documento, nele está escrito o seguinte: "Nessa sala, no canto superior esquerdo, existe um tubo com um mapa. Eu acredito qu-".</p>
+            <button class="btn-proximo" data-proximo="7">Ir até o local</button>
+        </div>
+
+        <div class="passo" id="passo-14">
+            <p>Você decide continuar explorando sem ligar o computador, até que uma hora você acha um tubo misterioso.</p>
+            <button class="btn-proximo" data-proximo="7">Abrir o tubo</button>
+        </div>
+
+        <div class="passo" id="passo-6">
+            <p>Você normalmente vai embora, continuando seu dia normalmente.</p>
+        </div>
+
+        <div class="passo" id="passo-7">
+            <p>Lá, você realmente encontra o mapa, ele tem toda a forma da escola e uma área marcada. Aparentemente era outra área subterrânea.</p>
+            <button class="btn-proximo" data-proximo="9">Ir até o local</button>
+            <button class="btn-proximo" data-proximo="10">Desistir da aventura.</button>
+        </div>
+
+        <div class="passo" id="passo-8">
+            <p>De volta às igrejas, você finalmente encontra o mapa antigo. Agora, para o Amazonas!</p>
+            <button class="btn-proximo" data-proximo="7">Seguir para o Amazonas</buttoeguir pelo rio à esquerda<n>
+        </div>
+
+        <div class="passo" id="passo-9">
+            <p>Indo até a área, você encontra outro buraco, passando por lá, você encontra uma estátua vermelha.</p>
+            <button class="btn-proximo" data-proximo="15">Tentar destruir a estátua</button>
+            <button class="btn-proximo" data-proximo="16">Interagir com a estátua</button>
+        </div>
+
+        <div class="passo" id="passo-15">
+            <p>Você tentou atacar a estátua, mas assim que a acertou, você foi jogado para trás, sofrendo o mesmo dano que a estátua sofreu.</p>
+            <button class="btn-proximo" data-proximo="16">Interagir com a estátua</button>
+        </div>
+
+        <div class="passo" id="passo-16">
+            <p>Você encostou na estátua e sentiu um arrepio em seu corpo, no mesmo momento, dois portões a sua frente abriu, ao meio deles, havia uma placa dizendo as seguintes palavras: "Um deles te levará a um local impossível de sair, o outro te levará a tesouros e riquezas imensuráveis".</p>
+            <button class="btn-proximo" data-proximo="17">Escolher o portão direito</button>
+            <button class="btn-proximo" data-proximo="18">Escolher o portão esquerdo</button>
+        </div>
+
+        <div class="passo" id="passo-17">
+            <p>Ao entrar no portal, você viu um grande vazio, caindo em um buraco o qual você ficou flutuando eternamente.</p>
+        </div>
+
+        <div class="passo" id="passo-18">
+            <p>Ao entrar no portão, você viu muito ouro brilhando, você achou um grande tesouro e conseguiu ir embora feliz, após terminar a aventura.</p>
+        </div>
+
+        <div class="passo" id="passo-10">
+            <p>Você rasga o mapa e decide desistir da aventura.</p>
+        </div>
+
+        <div class="passo" id="passo-11">
+            <img src="img/cenario-passo11-cidade-perdida.png" alt="encontrando uma cidade maravilhosa perdida no Amazonas">
+            <p>Dentro da cidade perdida, você descobre tesouros inimagináveis e decide se dedicar a estudar e preservar
+                este lugar</p>
+        </div>
+
+        <div class="passo" id="passo-12">
+            <p>Retornando e escolhendo o rio à esquerda, você finalmente encontra a cachoeira escondida e as inscrições
+                que levam à cidade perdida.</p>
+            <button class="btn-proximo" data-proximo="11">Explorar a cidade perdida</button>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
